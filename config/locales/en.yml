@@ -21,8 +21,7 @@
 
 en:
   event_list: Event List
-  admin:
-    event_list: Event List Admin
+  admin_event_list: Admin Event List
 
   hello: "Hi %{name},"
 
@@ -35,3 +34,5 @@ en:
       draft: Draft
       public: Public
       private: Private
+
+  admin_users: Admin Users
