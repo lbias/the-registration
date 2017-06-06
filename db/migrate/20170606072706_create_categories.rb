@@ -4,6 +4,8 @@ class CreateCategories < ActiveRecord::Migration[5.0]
       t.string :name
 
       t.timestamps
+      add_column :events, :category_id, :integer
+      add_index :events, :category_id
     end
   end
 end
