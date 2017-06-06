@@ -20,3 +20,10 @@
   email: 电子邮件
   groups: 群组
   actions: 操作
+
+  admin_console: 管理员控制台
+  edit_profile: 修改个人资料
+  change_password: 修改密码
+  log_out: 退出
+  sign_up: 注册
+  log_in: 登录
