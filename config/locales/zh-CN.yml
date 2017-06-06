@@ -2,3 +2,9 @@
   event_list: 活动列表
   admin:
     event_list: 活动列表管理
+
+  hello: "亲～ %{name} 你好："
+
+  brand_front_end: 培训报名前台
+  admin:
+    brand_back_end: 培训报名后台
