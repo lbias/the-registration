@@ -20,4 +20,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  event_list: Event List
+  admin:
+    event_list: Admin Event List
+
+  hello: "Hi %{name},"
+
+  brand_front_end: Training Registration Front End
+  admin:
+    brand_back_end: Training Registration Back End
