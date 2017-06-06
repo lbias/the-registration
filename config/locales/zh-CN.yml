@@ -1,7 +1,6 @@
 "zh-CN":
   event_list: 活动列表
-  admin:
-    event_list: 活动列表管理
+  admin_event_list: 活动列表管理
 
   hello: "亲～ %{name} 你好："
 
@@ -14,3 +13,10 @@
       draft: 草稿
       public: 公开
       private: 私密
+
+  admin_users: 用户管理
+
+  edit_user: 修改用户
+  email: 电子邮件
+  groups: 群组
+  actions: 操作

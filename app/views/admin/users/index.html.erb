@@ -1,0 +1,22 @@
+<h1><%= t("admin_users") %></h1>
+
+<table class="table">
+  <tr>
+    <th>ID</th>
+    <th><%= t("email") %></th>
+    <th><%= t("groups") %></th>
+    <th><%= t("actions") %></th>
+  </tr>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.id %></td>
+      <td><%= user.email %></td>
+      <td>
+        <% user.groups.each do |g| %>
+          <%= g.name %><br>
+        <% end %>
+      </td>
+      <td><%= link_to "Edit", edit_admin_user_path(user), :class => "btn btn-default" %></td>
+    </tr>
+  <% end %>
+</table>
