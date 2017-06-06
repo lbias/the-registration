@@ -12,6 +12,7 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem "rails-i18n"
 gem "devise-i18n"
+gem "select2-rails"
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
