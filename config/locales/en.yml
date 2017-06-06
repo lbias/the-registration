@@ -29,3 +29,9 @@ en:
   brand_front_end: Training Registration Front End
   admin:
     brand_back_end: Training Registration Back End
+
+  event:
+    status:
+      draft: Draft
+      public: Public
+      private: Private
