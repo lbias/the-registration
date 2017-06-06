@@ -8,3 +8,9 @@
   brand_front_end: 培训报名前台
   admin:
     brand_back_end: 培训报名后台
+
+  event:
+    status:
+      draft: 草稿
+      public: 公开
+      private: 私密
