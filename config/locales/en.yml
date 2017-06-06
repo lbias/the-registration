@@ -22,7 +22,7 @@
 en:
   event_list: Event List
   admin:
-    event_list: Admin Event List
+    event_list: Event List Admin
 
   hello: "Hi %{name},"
 
