@@ -15,3 +15,5 @@
       private: 私密
 
   admin_users: 用户管理
+
+  edit_user: 修改用户
