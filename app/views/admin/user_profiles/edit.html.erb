@@ -8,7 +8,8 @@
 
   <div class="form-group">
     <%= f.label :birthday %>
-    <%= f.date_field :birthday, :class => "form-control" %>
+    <!-- rails 内建的选日期的下拉选单 -->
+    <%= f.date_select :birthday, :class => "form-control" %>
   </div>
 
   <div class="form-group">
