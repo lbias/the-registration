@@ -47,4 +47,6 @@ en:
   change_password: Change Password
   log_out: Log Out
   sign_up: Sign Up
-  log_in: Log In          
+  log_in: Log In
+
+  edit_user_profile: Edit User Profile
