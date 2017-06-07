@@ -41,3 +41,13 @@ en:
   email: Email
   groups: Groups
   actions: Actions
+
+  admin_console: Administrator Console
+  edit_profile: Edit Profile
+  change_password: Change Password
+  log_out: Log Out
+  sign_up: Sign Up
+  log_in: Log In
+
+  edit_user_profile: Edit User Profile
+  my_profile: My Profile
