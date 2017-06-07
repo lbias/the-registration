@@ -8,8 +8,8 @@
 
   <div class="form-group">
     <%= f.label :birthday %>
-    <!-- rails 内建的选日期的下拉选单 -->
-    <%= f.date_select :birthday, :class => "form-control" %>
+    <!-- 使用 gem 'bootstrap-datepicker-rails'，将 script 放到最下方 -->
+    <%= ff.text_field :birthday, :class => "form-control" %>
   </div>
 
   <div class="form-group">
@@ -41,3 +41,7 @@
     <%= f.submit "Submit", :class => "btn btn-primary" %>
   </div>
 <% end %>
+
+<script>
+  $("#user_profile_attributes_birthday").datepicker({ format: "yyyy-mm-dd", language: "<%= I18n.locale %>" });
+</script>
