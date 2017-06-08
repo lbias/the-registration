@@ -54,3 +54,10 @@ en:
 
   bulk_update: Bulk Update
   bulk_delete: Bulk Delete
+
+  registration_now: Registration Now
+
+  registration:
+    status:
+      pending: Pending
+      confirmed: Confirmed 
