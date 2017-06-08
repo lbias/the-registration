@@ -35,3 +35,8 @@
   bulk_delete: 批量删除
 
   registration_now: 开始注册
+
+  registration:
+    status:
+      pending: 报名尚未完成
+      confirmed: 报名成功

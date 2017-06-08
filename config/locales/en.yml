@@ -56,3 +56,8 @@ en:
   bulk_delete: Bulk Delete
 
   registration_now: Registration Now
+
+  registration:
+    status:
+      pending: Pending
+      confirmed: Confirmed 
