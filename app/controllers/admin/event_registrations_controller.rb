@@ -3,6 +3,9 @@ class Admin::EventRegistrationsController < ApplicationController
 
   def index
     @registrations = @event.registrations.includes(:ticket).order("id DESC").page(params[:page]).per(10)
+    if params[:registration_id].present?
+      @registrations = @registrations.where( :id => params[:registration_id].split(",") )
+    end    
     if params[:status].present? && Registration::STATUS.include?(params[:status])
       @registrations = @registrations.by_status(params[:status])
     end
@@ -20,7 +23,7 @@ class Admin::EventRegistrationsController < ApplicationController
     end
     if params[:end_on].present?
       @registrations = @registrations.where( "created_at <= ?", Date.parse(params[:end_on]).end_of_day )
-    end    
+    end
   end
 
   def destroy
