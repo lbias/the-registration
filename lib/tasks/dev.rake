@@ -34,4 +34,5 @@ namespace :dev do
                                    :created_at => Time.now - rand(10).days - rand(24).hours )
     end
     puts "Let's visit http://localhost:3000/admin/events/vip-meetup/registrations"
+  end
 end
