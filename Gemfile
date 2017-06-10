@@ -24,6 +24,8 @@ gem 'paper_trail'
 gem 'rubyzip'
 gem 'axlsx'
 gem 'axlsx_rails'
+gem 'carrierwave'
+gem 'mini_magick'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
