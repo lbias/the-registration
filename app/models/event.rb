@@ -20,6 +20,8 @@ class Event < ApplicationRecord
   ranks :row_order
 
   mount_uploader :logo, EventLogoUploader
+  mount_uploaders :images, EventImageUploader
+  serialize :images, JSON
 
   def to_param
     self.friendly_id
