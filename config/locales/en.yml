@@ -65,4 +65,8 @@ en:
   user:
     role:
       admin: Super Admin
-      editor: Event Admin  
+      editor: Event Admin
+
+  notification:
+    subject:
+      confirmed_registration: "Confirmed registration: %{name}" 
