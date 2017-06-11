@@ -12,6 +12,9 @@ Rails.application.routes.draw do
         get "steps/3" => "registrations#step3", :as => :step3
         patch "steps/3/update" => "registrations#step3_update", :as => :update_step3
       end
+      collection do
+        post :import
+      end
     end
   end
 
