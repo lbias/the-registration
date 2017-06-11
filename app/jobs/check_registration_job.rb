@@ -4,7 +4,7 @@ class CheckRegistrationJob < ApplicationJob
   def perform(registration_id)
     registration = Registration.find(registration_id)
     unless registration.status == "confirmed"
-      registration.status = "cancalled"
+      registration.status = "cancelled"
       registration.save!
     end
   end

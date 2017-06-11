@@ -61,6 +61,7 @@ en:
     status:
       pending: Pending
       confirmed: Confirmed
+      cancelled: Cancelled
 
   user:
     role:
@@ -69,4 +70,4 @@ en:
 
   notification:
     subject:
-      confirmed_registration: "Confirmed registration: %{name}" 
+      confirmed_registration: "Confirmed registration: %{name}"
