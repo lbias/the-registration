@@ -27,7 +27,7 @@
               <% if current_user.is_editor? %>
                 <li class="active"><%= link_to(t("admin_event_list"), admin_events_path) %></li>
               <% end %>
-              <% if current_user.is_admin? %
+              <% if current_user.is_admin? %>
                 <li><%= link_to(t("admin_users"), admin_users_path) %></li>
               <% end %>
             <% end %>
