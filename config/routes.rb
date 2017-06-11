@@ -27,7 +27,7 @@ Rails.application.routes.draw do
       resources :registrations, :controller => "event_registrations" do
         collection do
           post :import
-        end        
+        end
       end
       resources :registration_imports
     end
@@ -44,4 +44,9 @@ Rails.application.routes.draw do
   get "/faq" => "pages#faq"
 
   resource :user
+
+  require 'sidekiq/web'
+  authenticate :user, lambda { |u| u.is_admin? } do
+    mount Sidekiq::Web => '/sidekiq'
+  end
 end
