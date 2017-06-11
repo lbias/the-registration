@@ -12,9 +12,6 @@ Rails.application.routes.draw do
         get "steps/3" => "registrations#step3", :as => :step3
         patch "steps/3/update" => "registrations#step3_update", :as => :update_step3
       end
-      collection do
-        post :import
-      end
     end
   end
 
@@ -27,7 +24,12 @@ Rails.application.routes.draw do
       member do
         post :reorder
       end
-      resources :registrations, :controller => "event_registrations"
+      resources :registrations, :controller => "event_registrations" do
+        collection do
+          post :import
+        end        
+      end
+      resources :registration_imports
     end
     resources :users do
       resource :profile, :controller => "user_profiles"
