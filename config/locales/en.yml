@@ -60,4 +60,9 @@ en:
   registration:
     status:
       pending: Pending
-      confirmed: Confirmed 
+      confirmed: Confirmed
+
+  user:
+    role:
+      admin: Super Admin
+      editor: Event Admin  
