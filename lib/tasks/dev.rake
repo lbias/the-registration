@@ -38,7 +38,7 @@ namespace :dev do
   end
 
   task :import_registration_csv_file => :environment do
-    event = Event.find_by_friendly_id("fullstack-meetup")
+    event = Event.find_by_friendly_id("vip-meetup")
     tickets = event.tickets
     success = 0
     failed_records = []
